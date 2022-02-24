@@ -18,6 +18,7 @@
   },
   "scripts": {
     "watch:tailwind": "postcss src/scss/global.scss --o src/css/global.css --watch",
+    "build:tailwind": "postcss src/scss/global.scss --o src/css/global.css",
     "build:scss": "sass src/scss:src/css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
