@@ -1,0 +1,27 @@
+{
+  "name": "castmill.com",
+  "version": "1.0.0",
+  "description": "Castmill landing page",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-navigation": "^0.3.2",
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.2",
+    "autoprefixer": "^10.4.2",
+    "axios": "^0.26.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^9.1.0",
+    "sass": "^1.49.8",
+    "tailwindcss": "^3.0.23"
+  },
+  "scripts": {
+    "watch:tailwind": "postcss src/scss/global.scss --o src/css/global.css --watch",
+    "build:scss": "sass src/scss:src/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "dev": "npm-run-all --parallel watch:*",
+    "build": "npm-run-all build:*"
+  }
+}

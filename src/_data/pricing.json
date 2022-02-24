@@ -1,0 +1,16 @@
+{
+  "packages": [
+    {
+      "name": "Starter",
+      "price": "29.99"
+    },
+    {
+      "name": "Growth",
+      "price": "49.99"
+    },
+    {
+      "name": "Enterprise",
+      "price": "99.99"
+    }
+  ]
+}
