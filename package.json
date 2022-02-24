@@ -23,6 +23,6 @@
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "dev": "npm-run-all --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "build": "npm-run-all build:scss build:tailwind build:eleventy"
   }
 }
