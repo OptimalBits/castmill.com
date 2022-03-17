@@ -46,6 +46,10 @@ the hardware is working as expected.
 
 ## What can we do for you
 
+We are welcoming partners all around the world. As a partner you will get promoted in our webpage
+and webpage. Users in your country or region will be recommended to contact you for installations 
+in your location and area of expertise.
+
 - Templates
 - Custom Made widgets
 - Testing and support new hardware.

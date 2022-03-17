@@ -1,6 +1,6 @@
 {% set navPages = collections.all | eleventyNavigation %}
 <!-- This example requires Tailwind CSS v2.0+ -->
-<header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-900/80">
+<header class="sticky top-0 z-50 backdrop-blur-xl bg-blue-900/80 border-b-2 border-b-blue-800/80">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
     <div class="w-full py-6 flex items-center justify-between border-b border-blue-500 lg:border-none">
       <div class="flex items-center">
@@ -10,7 +10,7 @@
         </a>
         <div class="hidden ml-10 space-x-8 lg:block">
           {%- for entry in navPages %}
-            <a href="{{ entry.url | url }}" class="text-base font-medium text-white hover:text-blue-50 {% if entry.url == page.url %}text-blue-300{% endif %}">
+            <a href="{{ entry.url | url }}" class="text-base font-medium text-white hover:text-blue-300 {% if entry.url == page.url %}text-blue-300{% endif %}">
               {{ entry.title }}</a>
           {%- endfor %}
         </div>
