@@ -1,0 +1,25 @@
+---
+layout: "base.njk"
+---
+<div class="container mx-auto mt-10 px-4 pb-28 md:mt-16 sm:px-6 md:px-8 xl:px-12 xl:max-w-6xl">
+    <article class="relative pt-10 max-w-4xl mx-auto xl:max-w-none">
+        <header class="col-span-full mb-10">
+
+            <h1 class="col-span-full text-8xl sm:text-4xl sm:text-center xl:mb-16 font-extrabold tracking-tight text-slate-900 text-slate-200">
+                {{ title }}
+            </h1>
+
+            {%- if cover -%}
+                <figure class="mt-10 col-span-full">
+                    <img class="h-96 w-full rounded-lg object-cover" src="{{ cover | image(600) }}" alt="">
+                </figure>
+            {%- endif -%}
+
+        </header>
+
+        <div class="container mx-auto prose prose-slate dark:prose-dark dark:prose-invert">
+            {{ content | safe }}
+        </div>
+
+    </article>
+</div>

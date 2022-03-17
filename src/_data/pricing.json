@@ -1,16 +1,31 @@
 {
+  "matrix": {
+    "Features": ["Players", "Sharing", "Analytics"],
+    "Support": ["Email", "Phone", "Chat", "Ticket"]
+  },
   "packages": [
     {
       "name": "Starter",
-      "price": "29.99"
+      "price": "29",
+      "description": "Start with a couple of players with most features available",
+      "features": {
+        "Players": "up to 4",
+        "Sharing": true
+      }
     },
     {
       "name": "Growth",
-      "price": "49.99"
+      "price": "49",
+      "description": "For your growing network of players",
+      "features": { "Players": "up to 10", "Sharing": true },
+      "support": {}
     },
     {
       "name": "Enterprise",
-      "price": "99.99"
+      "price": "99",
+      "description": "For your enterprise of players",
+      "features": {},
+      "support": {}
     }
   ]
 }

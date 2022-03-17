@@ -1,7 +1,8 @@
 ---
 title: Solutions
-layout: "blog.njk"
+layout: "page.njk"
 
 eleventyNavigation:
   key: Solutions
 ---
+

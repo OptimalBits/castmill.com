@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
+    <meta name="description" content="{{ description }}"/>
+    <link rel="canonical" href="{{ page.url }}"/>
+    <meta name="robots" content="index, follow"/>
+
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/global.css">
+
+    <meta property="og:title" content="{{ title }}"/>
+    <meta property="og:url" content="{{ page.url }}"/>
+    <meta property="og:description" content="{{ description }}"/>
+    <meta property="og:type" content="article"/>
+
+    {% if cover %}
+      <meta property="og:image" content="{{ cover | image(600) }}"/>
+    {% endif %}
   </head>
-  <body>
+  <body class="dark:bg-slate-900">
     {% include '_header.njk' %}
 
     <main>
