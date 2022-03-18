@@ -14,12 +14,15 @@
     <link rel="stylesheet" href="/css/global.css">
 
     <meta property="og:title" content="{{ title }}"/>
-    <meta property="og:url" content="{{ page.url }}"/>
+    <meta property="og:url" content="{{ site.baseUrl }}{{ page.url }}"/>
     <meta property="og:description" content="{{ description }}"/>
     <meta property="og:type" content="article"/>
 
     {% if cover %}
-      <meta property="og:image" content="{{ cover | image(600) }}"/>
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta property="og:image" content="{{ site.baseUrl }}{{ cover | image(600) }}"/>
+    {% else %}
+      <meta name="twitter:card" content="summary"/>
     {% endif %}
   </head>
   <body class="dark:bg-slate-900 bg-slate-50">
