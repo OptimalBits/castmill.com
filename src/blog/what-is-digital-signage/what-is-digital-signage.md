@@ -5,7 +5,7 @@ description: Back to the basics...
 author: Manuel Astudillo
 twitter: manast
 date: 2022-03-14
-cover: ./src/blog/what-is-digital-signage/cool.webp
+cover: /blog/what-is-digital-signage/cool.webp
 avatar: https://avatars.githubusercontent.com/u/95200?v=4
 tags: post
 ---

@@ -1,7 +1,7 @@
 ---
 title: Castmill Partners
 layout: "page.njk"
-cover: "./src/images/partners2.webp"
+cover: "/images/partners2.webp"
 
 eleventyNavigation:
   key: Partners

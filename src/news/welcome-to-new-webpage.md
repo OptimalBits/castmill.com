@@ -4,7 +4,7 @@ description: We are very proud to welcome you to our new webpage that we have de
 date: 2022-03-14
 author: Manuel Astudillo
 twitter: manast
-cover: ./src/blog/what-is-digital-signage/cool.webp
+cover: /blog/what-is-digital-signage/cool.webp
 avatar: https://avatars.githubusercontent.com/u/95200?v=4
 tags: news
 ---
