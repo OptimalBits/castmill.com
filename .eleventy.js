@@ -18,25 +18,20 @@ function absPath(src) {
   return src;
 }
 
-async function imageShortcode(src, alt, sizes) {
+async function imageShortcode(src, alt, sizes, float) {
   const metadata = await Image(absPath(src), {
-    widths: [300, 600],
+    widths: Array.isArray(sizes) ? sizes : [sizes],
     formats: ["jpeg"],
     outputDir: "docs/images",
     urlPath: "/images",
   });
 
-  const imageAttributes = {
-    alt,
-    sizes,
-    loading: "lazy",
-    decoding: "async",
-  };
-
   // You bet we throw an error on missing alt in `imageAttributes` (alt="" works okay)
   let data = metadata.jpeg[metadata.jpeg.length - 1];
-  return `<figure>
-    <img src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" 
+  const margin = float == "right" ? "margin-left" : "margin-right";
+  const floatStyle = float ? `style="float:${float};${margin}: 2em;"` : "";
+  return `<figure ${floatStyle}>
+    <img class="rounded-lg" src="${data.url}" width="${data.width}" height="${data.height}" alt="${alt}" 
     loading="lazy" decoding="async" style="margin-top:0;margin-bottom:0;">
     <figcaption>${alt}</figcaption>
     </figure>`;
