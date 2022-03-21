@@ -90,12 +90,15 @@
       })(window, document);
     </script
   </head>
+
     <body class="dark:bg-slate-900 bg-slate-50">
       {% include '_header.njk' %}
 
       <main>
         {{ content | safe }}
       </main>
+
+      {% include '_cta.njk' %}
 
       {% include '_footer.njk' %}
     </body>
