@@ -1,16 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
-    <meta charset="utf-8"/>
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="icon",type="image/png", href="/images/castmill_favicon.png"/>
 
     <meta name="description" content="{{ description }}"/>
     <link rel="canonical" href="{{ page.url }}"/>
     <meta name="robots" content="index, follow"/>
 
-    <title>{{ title }}</title>
+    <!-- Begin Mailchimp Signup Form -->
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script type='text/javascript'>
+      (function ($) {
+        window.fnames = new Array();
+        window.ftypes = new Array();
+        fnames[0] = 'EMAIL';
+        ftypes[0] = 'email';
+        fnames[1] = 'FNAME';
+        ftypes[1] = 'text';
+        fnames[2] = 'LNAME';
+        ftypes[2] = 'text';
+        fnames[3] = 'ADDRESS';
+        ftypes[3] = 'address';
+        fnames[4] = 'PHONE';
+        ftypes[4] = 'phone';
+        fnames[5] = 'BIRTHDAY';
+        ftypes[5] = 'birthday';
+      }(jQuery));
+      var $mcj = jQuery.noConflict(true);
+    </script>
+    <!--End mc_embed_signup-->
+
+    {% if title != "Castmill" %}
+      <title>Castmill | {{ title }}</title>
+    {% else %}
+      <title>Castmill</title>
+    {% endif %}
     <link rel="stylesheet" href="/css/global.css">
 
     <meta property="og:title" content="{{ title }}"/>
@@ -24,14 +52,51 @@
     {% else %}
       <meta name="twitter:card" content="summary"/>
     {% endif %}
+
+    <script type="text/javascript">
+      (function (w, d, v3) {
+        w.chaportConfig = {
+          appId: '5efdf2f11b4b08234a76f709',
+          appearance: {
+            teamName: 'Castmill Support Team'
+          }
+        };
+
+        if (w.chaport) 
+          return;
+        v3 = w.chaport = {};
+        v3._q = [];
+        v3._l = {};
+        v3.q = function () {
+          v3
+            ._q
+            .push(arguments)
+        };
+        v3.on = function (e, fn) {
+          if (!v3._l[e]) 
+            v3._l[e] = [];
+          v3
+            ._l[e]
+            .push(fn)
+        };
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://app.chaport.com/javascripts/insert.js';
+        var ss = d.getElementsByTagName('script')[0];
+        ss
+          .parentNode
+          .insertBefore(s, ss)
+      })(window, document);
+    </script
   </head>
-  <body class="dark:bg-slate-900 bg-slate-50">
-    {% include '_header.njk' %}
+    <body class="dark:bg-slate-900 bg-slate-50">
+      {% include '_header.njk' %}
 
-    <main>
-      {{ content | safe }}
-    </main>
+      <main>
+        {{ content | safe }}
+      </main>
 
-    {% include '_footer.njk' %}
-  </body>
-</html>
+      {% include '_footer.njk' %}
+    </body>
+  </html>

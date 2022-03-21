@@ -3,6 +3,7 @@ title: Templates in times of Covid
 type: Article
 description: This is some important post
 author: Manuel Astudillo
+twitter: manast
 date: 2022-03-16
 cover: https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80
 avatar: https://avatars.githubusercontent.com/u/95200?v=4

@@ -1,7 +1,8 @@
 ---
-title: Castmill Partners
+title: Partners
 layout: "page.njk"
 cover: "/images/partners2.webp"
+caption: "Work together with us to bring the best possible solution to your customers."
 
 eleventyNavigation:
   key: Partners
@@ -12,7 +13,7 @@ Become a Castmill partner and deliver the best Digital Signage solution for your
 ## Why become a partner?
 
 Becoming a partner is a natural step for you that have a growing network of displays or
-are planning to build it. As a partner, you will get your own Whitelabel instance of 
+are planning to build one. As a partner, you will get your own Whitelabel instance of 
 Castmill, where you can manage and control your users.
 
 
@@ -47,7 +48,7 @@ the hardware is working as expected.
 ## What can we do for you
 
 We are welcoming partners all around the world. As a partner you will get promoted in our webpage
-and webpage. Users in your country or region will be recommended to contact you for installations 
+and our newsletter. Users in your country or region will be recommended to contact you for installations 
 in your location and area of expertise.
 
 - Templates

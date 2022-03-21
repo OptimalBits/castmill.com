@@ -10,8 +10,40 @@
         </a>
         <div class="hidden ml-10 space-x-8 lg:block">
           {%- for entry in navPages %}
-            <a href="{{ entry.url | url }}" class="text-base font-medium text-white hover:text-blue-300 {% if entry.url == page.url %}text-blue-300{% endif %}">
-              {{ entry.title }}</a>
+            <span class="relative">
+              {% if not entry.tag %}
+                <a href="{{ entry.url | url }}" {% if entry.external %}target="_blank"{% endif %}class="text-base font-medium text-white hover:text-blue-300 {% if entry.url == page.url %}text-blue-300{% endif %}">
+                  {{ entry.title }}
+                  {% if entry.external %}
+                    <svg xmlns="http://www.w3.org/2000/svg" class="inline h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                      <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"/>
+                      <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"/>
+                    </svg>
+                  {% endif %}
+                </a>
+              {% else %}
+                <style>
+                  #{{ entry.title }}:checked ~ #{{ entry.title }}menu {
+                    opacity: 1;
+                    display: block;
+                  }
+                </style>
+                <input type="checkbox" id="{{ entry.title }}" class="hidden absolute"/>
+                <label for="{{ entry.title }}" class="space-x-1 cursor-pointer">
+                  <span class="text-base font-medium text-white hover:text-blue-300">
+                    {{ entry.title }}
+                  </span>
+                </label>
+                <div id="{{ entry.title }}menu" class="hidden opacity-0 absolute left-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabindex="-1">
+                  <div class="py-1" role="none">
+                    {% for item in collections['solutions'] %}
+                      <!-- Active: "bg-gray-100 text-gray-900", Not Active: "text-gray-700" -->
+                      <a href="{{ item.url }}" class="text-gray-700 hover:bg-gray-300 block px-4 py-2 text-sm" role="menuitem" tabindex="-1">{{ item.data.title }}</a>
+                    {%- endfor %}
+                  </div>
+                </div>
+              {% endif %}
+            </span>
           {%- endfor %}
         </div>
       </div>

@@ -12,6 +12,11 @@ tags: post
 
 If this is the first time you heard about "Digital Signage" you may wonder exactly what it is.
 
+Digital Signage is the industry behind digital screens outdoors and indoors. Screens showing any kind of
+content such as information, advertisements, entertainment, etc.
+
+For digital signage to work
+
 We can write a lot of stuff about digital signage, for example where is it used, how much does it cost,
 what solutions are available, etc, etc, etc, and actually we can finish by recommending Castmill, which
 of course is a great solution, I guess you have realized this by now, right?
@@ -19,3 +24,11 @@ of course is a great solution, I guess you have realized this by now, right?
 ## And we can have subheadings too
 
 And different sections with stuff
+
+## Challenges
+
+- Connectivity
+- Hardware failure
+- Software bugs
+- Black screens
+

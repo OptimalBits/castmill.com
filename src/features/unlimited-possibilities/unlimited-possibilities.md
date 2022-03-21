@@ -1,10 +1,10 @@
 ---
 title: "Unlimited possibilities"
-description: "Castmill is an extensible platform allowing you to add custom widgets and new functionality that is required just for your project. There is no small or big feature we cannot add to the platform."
+description: "Castmill is an extensible platform allowing you to add custom widgets and new functionality that is required just for your project. If you can imagine it, we can add it to the platform."
 icon: "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
 image: "/images/features/extensible.jpg"
 cover: "/images/features/extensible.jpg"
-type: "right"
+type: "left"
 tags: features
 date: 2022-03-18
 ---
@@ -35,6 +35,5 @@ Our player works on most hardware available, but your project may require a devi
 to a month without considering testing time.
 
 {% image "/features/unlimited-possibilities/pcb.jpg","", 900 %}
-
 
 _Pricing for custom features is subject to the complexity of the feature. We offer very competitive prices, just send us an [email](mailto:support@castmill.com) and let's discuss your particular needs._
