@@ -4,8 +4,11 @@ layout: "page.njk"
 cover: "/images/partners2.webp"
 caption: "Work together with us to bring the best possible solution to your customers."
 
+redirect_from: /whitelabel/
+
 eleventyNavigation:
   key: Partners
+  order: 7
 ---
 
 Become a Castmill partner and deliver the best Digital Signage solution for your customers.
