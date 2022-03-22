@@ -1057,8 +1057,8 @@ select {
   margin-left: auto;
   margin-right: auto;
 }
-.mb-8 {
-  margin-bottom: 2rem;
+.mb-16 {
+  margin-bottom: 4rem;
 }
 .mt-3 {
   margin-top: 0.75rem;
@@ -1075,14 +1075,14 @@ select {
 .ml-3 {
   margin-left: 0.75rem;
 }
+.mb-8 {
+  margin-bottom: 2rem;
+}
 .mt-4 {
   margin-top: 1rem;
 }
 .ml-auto {
   margin-left: auto;
-}
-.mb-16 {
-  margin-bottom: 4rem;
 }
 .mb-20 {
   margin-bottom: 5rem;
