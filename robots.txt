@@ -1,0 +1,4 @@
+Sitemap: https://www.castmill.io/sitemap.xml
+
+User-agent: * 
+Disallow: /
