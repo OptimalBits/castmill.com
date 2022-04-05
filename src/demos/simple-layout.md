@@ -2,6 +2,7 @@
 title: Simple layout
 layout: "page.njk"
 tags: demo
+date: 2022-04-04
 ---
 
 <script type="module">

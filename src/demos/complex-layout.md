@@ -2,6 +2,7 @@
 title: Complex layout
 layout: "page.njk"
 tags: demo
+date: 2022-04-05
 ---
 
 <script type="module">
