@@ -1,0 +1,23 @@
+<div id="demo" class="mt-12" style="line-height: 1.5em;"></div>
+
+{% assign previousPost = collections.demo | getPreviousCollectionItem: page %}
+{% assign nextPost = collections.demo | getNextCollectionItem: page %}
+
+<div class="flex">
+  <div class="flex-none">{% if previousPost %}
+  <a href="{{ previousPost.url | url }}">Previous Demo</a>
+{% else %}
+  <span>
+    Previous Demo
+  </span>
+{% endif %}
+</div>
+  <div class="grow"></div>
+  <div class="flex-none">{% if nextPost %}
+  <a href="{{ nextPost.url | url }}">Next Demo</a>
+{% else %}
+  <span>
+    Next Demo
+  </span>
+{% endif %}</div>
+</div>

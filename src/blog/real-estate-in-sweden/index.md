@@ -1,5 +1,5 @@
 ---
-title: Real State in Sweden
+title: Real Estate in Sweden
 type: Use Case
 description: How is Real State doing Digital Signage in Sweden?
 author: Manuel Astudillo

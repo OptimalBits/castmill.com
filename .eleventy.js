@@ -45,6 +45,7 @@ module.exports = function (eleventyConfig) {
   // Passthroughs
   eleventyConfig.addPassthroughCopy("src/css/global.css");
   eleventyConfig.addPassthroughCopy("src/images");
+  eleventyConfig.addPassthroughCopy("src/assets");
 
   // Filters
   eleventyConfig.addFilter("hasFeature", function (package, feature) {
