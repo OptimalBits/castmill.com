@@ -49,6 +49,7 @@
     {% if cover %}
       <meta name="twitter:card" content="summary_large_image"/>
       <meta property="og:image" content="{{ site.url }}{{ cover | image(600) }}"/>
+      <meta name="twitter:image" content="{{ site.url }}{{ cover | image(600) }}"/>
     {% else %}
       <meta name="twitter:card" content="summary"/>
     {% endif %}
