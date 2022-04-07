@@ -3,3 +3,4 @@ docs
 src/css
 .DS_Store
 .cache
+yarn-error.log

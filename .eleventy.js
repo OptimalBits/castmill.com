@@ -9,16 +9,14 @@ const puppeteer = require("puppeteer");
 const datauri = require("datauri");
 const crypto = require("crypto");
 
-let browser;
-
 const { DateTime } = require("luxon");
 
-const getBrowser = () => {
-  return puppeteer.launch({
-    headless: true,
-    defaultViewport: { width: 1200, height: 630 },
-    args: ["--font-render-hinting=none", "--force-color-profile=srgb"],
-  });
+// We cache the getting of a browser and reuse it everywhere
+let gettingBrowser;
+
+const getPage = async () => {
+  const browser = await gettingBrowser;
+  return browser.newPage();
 };
 
 const createSocialImageForArticle = async (
@@ -41,9 +39,6 @@ const createSocialImageForArticle = async (
     : await datauri(imageSrc);
 
   // Set puppeteer content
-  const page = browser?.newPage
-    ? await browser.newPage()
-    : await (await getBrowser()).newPage();
   const template = nunjucks.render("cover.njk", {
     image: content,
     type,
@@ -57,11 +52,9 @@ const createSocialImageForArticle = async (
     height,
   });
 
-  await page.setContent(template);
+  const page = await getPage();
 
-  // test if the output directory already exists, if not, create
-  const outputDir = path.dirname(output);
-  if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+  await page.setContent(template);
 
   // Save Puppeteer screenshot as jpeg
   await page.screenshot({
@@ -202,12 +195,21 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.on("eleventy.before", async () => {
-    // Run me before the build starts
+    if (!gettingBrowser) {
+      gettingBrowser = puppeteer.launch({
+        headless: true,
+        defaultViewport: { width: 1200, height: 630 },
+        args: ["--font-render-hinting=none", "--force-color-profile=srgb"],
+      });
+      await gettingBrowser;
+    }
   });
 
   eleventyConfig.on("eleventy.after", async () => {
+    console.log("Build complete");
     // Close puppeteer browser
-    browser && (await browser.close());
+    gettingBrowser && (await (await gettingBrowser).close());
+    gettingBrowser = null;
   });
 
   return {
