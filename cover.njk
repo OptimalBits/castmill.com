@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title }}</title>
+    </head>
+    <body style="border: 0; margin: 0; width: {{ width }}px; height: {{ height }}px;">
+
+        <div style="
+      width:100%;
+      height:100%;
+      background-color: #0f172a;
+      position: relative
+    ">
+            <div style="
+      position: absolute;
+      width: 14em;
+      height: 5em;
+      top: 2em;
+      left: 4em;
+      background: url(https://www.castmill.io/images/logo.png) center / contain no-repeat " alt="Castmill logo"></div>
+
+            <div style="
+        position: absolute;
+        background: url({{ image }}) center / cover no-repeat;
+        width: 50%;
+        height: 50%;
+        right: 2em;
+        top: 9em;
+        border-radius: 1%;
+        box-shadow: 15px 15px 15px #000;
+        "></div>
+
+            <div style="display: flex; position: absolute; top: 9em; left: 2.5em; width: 32em; flex-direction: column; justify-content: center; align-items: start">
+                {% if type %}
+                    <div style="color: #acacf3; font-weight: 600; font-size: 1em; font-family: sans-serif">{{ type }}</div>
+                {% endif %}
+                <div style="color: white; font-size: 3em; font-weight: 600; font-family: sans-serif; margin-bottom: 0.3em;">{{ title }}</div>
+                <div style="color: gray; font-size: 2em; font-family: sans-serif; font-style: italic;">{{ description }}</div>
+            </div>
+
+            {% if author %}
+                <div style="display: flex; position: absolute; flex-direction: row; justify-content: center; align-items: center; left: 2em; bottom: 2em;">
+                    <div style="background: url({{ avatar }}) center / cover no-repeat; width: 5em; height: 5em; border-radius: 50%; margin-top: 2em;"></div>
+                    <div style="display: flex; flex-direction: column; margin: 0 1.5em; font-family: sans-serif; line-height: 1.5em;">
+                        <div style="color: #ccc;">{{ author }}</div>
+                        <div style="color: #999;">{{ date }} - {{ length }} Read</div>
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+        </div>
+
+    </body>
+</html>

@@ -5,7 +5,7 @@
     <div class="relative">
 
       <div class="lg:mx-auto lg:max-w-7xl lg:px-8 lg:grid lg:grid-cols-2 lg:grid-flow-col-dense lg:gap-24">
-        <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 {% if feature.type == 'right' %}lg:col-start-2{% endif %}">
+        <div class="px-4 max-w-xl mx-auto sm:px-6 lg:py-16 lg:max-w-none lg:mx-0 lg:px-0 {% if feature.side == 'right' %}lg:col-start-2{% endif %}">
           <div>
             <div class="mt-6">
               <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-300">{{ feature.title }}</h2>
@@ -33,12 +33,12 @@
             </div>
           {% endif %}
         </div>
-        <div class="mt-12 sm:mt-16 lg:mt-0 {% if feature.type == 'right' %}lg:col-start-1{% endif %}">
+        <div class="mt-12 sm:mt-16 lg:mt-0 {% if feature.side == 'right' %}lg:col-start-1{% endif %}">
           <div class="pl-4 -mr-48 sm:pl-6 md:-mr-16 lg:px-0 lg:m-0 lg:relative lg:h-full">
-            {% if feature.type == 'left' %}
+            {% if feature.side == 'left' %}
               <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none" src="{{ feature.image }}" alt="Inbox user interface">
             {% endif %}
-            {% if feature.type == 'right' %}
+            {% if feature.side == 'right' %}
               <img class="w-full rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none" src="{{ feature.image }}" alt="Inbox user interface">
             {% endif %}
           </div>

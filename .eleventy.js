@@ -3,7 +3,73 @@ const readingTime = require("eleventy-plugin-reading-time");
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 
+const nunjucks = require("nunjucks");
+const fs = require("fs");
+const puppeteer = require("puppeteer");
+const datauri = require("datauri");
+const crypto = require("crypto");
+
+let browser;
+
 const { DateTime } = require("luxon");
+
+const getBrowser = () => {
+  return puppeteer.launch({
+    headless: true,
+    defaultViewport: { width: 1200, height: 630 },
+    args: ["--font-render-hinting=none", "--force-color-profile=srgb"],
+  });
+};
+
+const createSocialImageForArticle = async (
+  imageSrc,
+  date,
+  title,
+  description,
+  type,
+  author,
+  avatar,
+  length,
+  output
+) => {
+  const width = 1200;
+  const height = 630;
+
+  // Get datauri for the image
+  const content = imageSrc.startsWith("https")
+    ? imageSrc
+    : await datauri(imageSrc);
+
+  // Set puppeteer content
+  const page = browser?.newPage
+    ? await browser.newPage()
+    : await (await getBrowser()).newPage();
+  const template = nunjucks.render("cover.njk", {
+    image: content,
+    type,
+    title,
+    description,
+    author,
+    avatar,
+    length,
+    date,
+    width,
+    height,
+  });
+
+  await page.setContent(template);
+
+  // test if the output directory already exists, if not, create
+  const outputDir = path.dirname(output);
+  if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+
+  // Save Puppeteer screenshot as jpeg
+  await page.screenshot({
+    path: output,
+    type: "jpeg",
+    quality: 85,
+  });
+};
 
 function absPath(src) {
   let url;
@@ -75,6 +141,52 @@ module.exports = function (eleventyConfig) {
     }
   );
 
+  eleventyConfig.addNunjucksAsyncFilter(
+    "coverize",
+    async function (
+      src,
+      width,
+      date,
+      title,
+      description,
+      type,
+      author,
+      avatar,
+      length,
+      callback
+    ) {
+      try {
+        if (!src) {
+          return callback(null, "");
+        }
+
+        const checksum = crypto
+          .createHash("md5")
+          .update(`${src}${width}${title}${description}`)
+          .digest("hex");
+
+        const dstPath = `/images/cover-${checksum}.jpg`;
+        const dst = `${__dirname}/docs${dstPath}`;
+
+        await createSocialImageForArticle(
+          absPath(src),
+          date,
+          title,
+          description,
+          type,
+          author,
+          avatar,
+          length,
+          dst
+        );
+
+        callback(null, dstPath);
+      } catch (err) {
+        callback(err);
+      }
+    }
+  );
+
   // Shortcodes
   eleventyConfig.addNunjucksAsyncShortcode("image", imageShortcode);
   eleventyConfig.addLiquidShortcode("image", imageShortcode);
@@ -87,6 +199,15 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addFilter("postDateLong", (dateObj) => {
     return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_HUGE);
+  });
+
+  eleventyConfig.on("eleventy.before", async () => {
+    // Run me before the build starts
+  });
+
+  eleventyConfig.on("eleventy.after", async () => {
+    // Close puppeteer browser
+    browser && (await browser.close());
   });
 
   return {

@@ -4,7 +4,7 @@ description: "Tired of being ignored by your typical customer support? We unders
 icon: "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
 image: "/images/features/support.jpg"
 cover: "/images/features/support.jpg"
-type: "right"
+side: "right"
 testimonial:
   avatar: "/features/best-in-class-support/claire-avatar.jpeg"
   name: "Claire Hopper"

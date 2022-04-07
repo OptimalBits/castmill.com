@@ -9,7 +9,7 @@ testimonial:
   name: "Iztok Polanič"
   role: "Property Manager, Center Maximus"
   quote: "I tried several solutions until I found Castmill. There is no easier way to do digital signage, period."
-type: "left"
+side: "left"
 date: 2022-03-15
 redirect_from: /tour
 ---

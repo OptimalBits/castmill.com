@@ -4,7 +4,7 @@ description: "Castmill is an extensible platform allowing you to add custom widg
 icon: "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
 image: "/images/features/extensible.jpg"
 cover: "/images/features/extensible.jpg"
-type: "left"
+side: "left"
 tags: features
 date: 2022-03-18
 ---
