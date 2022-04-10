@@ -47,7 +47,7 @@
     <meta property="og:type" content="article"/>
 
     {% if cover %}
-      {% set coverImage = cover | coverize(600, date | postDate, title, description, type, author, avatar, content | readingTime) %}
+      {% set coverImage = cover | coverize(1200, date | postDate, title, description, type, author, avatar, content | readingTime) %}
       <meta name="twitter:card" content="summary_large_image"/>
       <meta property="og:image" content="{{ site.url }}{{ coverImage }}"/>
       <meta name="twitter:image" content="{{ site.url }}{{ coverImage }}"/>
