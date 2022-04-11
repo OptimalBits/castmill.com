@@ -1078,6 +1078,9 @@ select {
 .ml-3 {
   margin-left: 0.75rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .mb-8 {
   margin-bottom: 2rem;
 }
@@ -1132,9 +1135,6 @@ select {
 .ml-8 {
   margin-left: 2rem;
 }
-.mb-10 {
-  margin-bottom: 2.5rem;
-}
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1180,6 +1180,9 @@ select {
 .h-10 {
   height: 2.5rem;
 }
+.h-96 {
+  height: 24rem;
+}
 .h-5 {
   height: 1.25rem;
 }
@@ -1206,9 +1209,6 @@ select {
 }
 .h-1\/2 {
   height: 50%;
-}
-.h-96 {
-  height: 24rem;
 }
 .min-h-\[48em\] {
   min-height: 48em;
