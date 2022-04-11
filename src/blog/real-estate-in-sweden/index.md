@@ -44,4 +44,4 @@ tedious and repetitive, however this job was performed basically by Tylöprint. 
 There are still a lot of challenges for the future, even today, most of the real-state agencies have not upgraded to digital signage, but the process is ongoing. New competitors are arising of course, so we are always looking into ways to improve our solution, making it easier
 to use and automating the publishing process.
 
-If you are a provider of digital signage solutions to the real estate market outside of Sweden, we are a seasoned partner and we are looking forward to be working with you to become, together, leaders in your country as well.
+*If you are a provider of digital signage solutions to the real estate market outside of Sweden, we are a seasoned partner and we are looking forward to be working with you to become, together, leaders in your country as well.*
