@@ -17,7 +17,7 @@ new situation.
 
 The solution to this new reality was to use "Digital Signage" with custom templates and a custom integration to fetch the data automatically. Our
 Swedish partner, [Tylöprint](https://tyloprint.se), provided their beautiful panels to hang them on the front of their 10 offices in the area of
-Gothemburg (Sweden second largest city).
+Gothenburg (Sweden second largest city).
 
 {% image "/blog/templates-covid-times/template.jpg", "One of the templates created for Länsförsäkringar.", 900 %}
 
