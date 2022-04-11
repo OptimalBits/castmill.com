@@ -12,6 +12,6 @@ date: 2022-04-05
     startDemo(app, demo)
 </script>
 
-This demo demonstrates comples layouts, text and more advanced transitions and animations.
+This demo demonstrates complex layouts, text and more advanced transitions and animations.
 
 {% include "_demo.liquid" %}
