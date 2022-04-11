@@ -1,7 +1,7 @@
 ---
 title: What is Digital Signage?
 type: Article
-description: If you are new to Digital Signage you may find this post useful to you.
+description: A brief introduction to Digital Signage and some of its benefits and challenges.
 author: Manuel Astudillo
 twitter: manast
 date: 2022-03-14
