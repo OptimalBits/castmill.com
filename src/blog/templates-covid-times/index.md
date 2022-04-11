@@ -5,7 +5,7 @@ description: Customized templates helped in keeping information updated automati
 author: Manuel Astudillo
 twitter: manast
 date: 2022-03-16
-cover: https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80
+cover: /blog/templates-covid-times/lf-front.jpg
 avatar: https://avatars.githubusercontent.com/u/95200?v=4
 tags: post
 ---
@@ -27,4 +27,3 @@ showing the latest opening hours as well as other relevant information.
 
 Both the customers and our team are pretty pleased with the result, and the solution has been running for over a year now with almost no human
 intervention, which was the most important goal to achieve in this project.
-
