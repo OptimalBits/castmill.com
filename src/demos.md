@@ -2,6 +2,8 @@
 title: Demos
 layout: "page.njk"
 
+cover: /images/demo.jpg
+
 pagination:
   data: collections.demo
   size: 1
@@ -12,7 +14,7 @@ eleventyNavigation:
   order: 6
 ---
 
-Welcome to the demos section. In these pages we will show-case some examples of what Castmill can do. Everything you see in these demos and much more can be run on your displays. If there is a demo missing showcasing something you would like to see, please do not hesitate to [contact us](mailto:support@castmill.com).
+Welcome to the demos section. In these pages we will show-case some examples of what Castmill can do. Everything you see in these demos and much more can be run on your displays. If there is a demo missing something you would like to see, please do not hesitate to [contact us](mailto:support@castmill.com).
 
 <ol>
 {% for demo in collections.demo | reverse %}
