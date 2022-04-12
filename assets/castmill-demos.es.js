@@ -7515,10 +7515,10 @@ async function getComplexDemo() {
   return Playlist.fromJSON(jsonPlaylist);
 }
 const videos = {
-  vegetables: "https://media.istockphoto.com/videos/colorful-fruits-and-vegetables-market-video-id462883998",
-  food: "https://media.istockphoto.com/videos/cooked-meat-meal-with-vegetables-video-id504115680",
-  car: "https://media.istockphoto.com/videos/aerial-view-electric-car-driving-on-country-road-video-id541931266",
-  lemon: "https://media.istockphoto.com/videos/slice-of-lemon-and-ice-in-water-video-id1003169662"
+  raw: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/videos/coffee-raw.mp4",
+  roast: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/videos/coffee-roast.mp4",
+  brew: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/videos/coffee-brew.mp4",
+  drink: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/videos/coffee-drink.mp4"
 };
 const videoLayers = createLayerSequence({
   name: "videos",
@@ -7528,14 +7528,14 @@ const videoLayers = createLayerSequence({
   defaultArgs: {
     duration: 4e3
   }
-}, { src: videos.food }, { src: videos.car }, { src: videos.lemon }, { src: videos.vegetables });
+}, { src: videos.raw }, { src: videos.roast }, { src: videos.brew }, { src: videos.drink });
 const images = {
-  smoothie: "https://media.istockphoto.com/photos/healthy-appetizing-red-smoothie-dessert-in-glasses-picture-id1081369140",
-  icecream: "https://media.istockphoto.com/photos/strawberry-vanilla-chocolate-ice-cream-with-waffle-cone-on-marble-picture-id1161805849",
-  muffins: "https://media.istockphoto.com/photos/banana-nuts-muffins-picture-id497157747",
-  pizza: "https://media.istockphoto.com/photos/pizza-with-very-much-cheese-melting-picture-id1269122740",
-  coffe: "https://media.istockphoto.com/photos/cup-of-espresso-with-coffee-beans-picture-id1177900338",
-  cake: "https://media.istockphoto.com/photos/stawberry-cheesecake-picture-id1146488934"
+  cake1: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/images/cake1.jpg",
+  cake2: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/images/cake2.jpg",
+  cake3: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/images/cake3.jpg",
+  cake4: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/images/cake4.jpg",
+  cake5: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/images/cake5.jpg",
+  cake6: "https://castmill-demos.s3.eu-central-1.amazonaws.com/assets/images/cake6.jpg"
 };
 const imageLayers = createLayerSequence({
   name: "images",
@@ -7545,18 +7545,18 @@ const imageLayers = createLayerSequence({
   defaultArgs: {
     duration: 2e3,
     transition: {
-      uri: "transition://side-scroll",
+      uri: "transition://crossfade",
       opts: {
-        duration: 800
+        duration: 500
       }
     }
   }
-}, { src: images.pizza, size: "cover" }, { src: images.smoothie, size: "cover" }, { src: images.icecream, size: "cover" }, { src: images.coffe, size: "cover" }, { src: images.cake, size: "cover" });
+}, { src: images.cake2, size: "cover" }, { src: images.cake3, size: "cover" }, { src: images.cake4, size: "cover" }, { src: images.cake5, size: "cover" }, { src: images.cake6, size: "cover" }, { src: images.cake1, size: "cover" });
 async function getSimpleDemo() {
   const jsonPlaylist = {
     name: "Simple Demo",
     layers: [
-      ...getIntro("This demo ilustrates some simple cases such as showing images and videos."),
+      ...getIntro("This demo illustrates some simple cases such as showing images and videos."),
       ...imageLayers,
       ...videoLayers
     ]
