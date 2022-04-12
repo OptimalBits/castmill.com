@@ -12,7 +12,7 @@
           {%- for entry in navPages %}
             <span class="relative">
               {% if not entry.tag %}
-                <a href="{{ entry.url | url }}" {% if entry.external %}target="_blank"{% endif %}class="text-base font-medium text-white hover:text-blue-300 {% if entry.url == page.url %}text-blue-300{% endif %}">
+                <a href="{{ entry.url | url }}" {% if entry.external %}target="_blank" {% endif %}class="text-base font-medium text-white hover:text-blue-300 {% if entry.url == page.url %}text-blue-300{% endif %}">
                   {{ entry.title }}
                   {% if entry.external %}
                     <svg xmlns="http://www.w3.org/2000/svg" class="inline h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

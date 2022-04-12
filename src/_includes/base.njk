@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 
-    <link rel="icon",type="image/png", href="/images/castmill_favicon.png"/>
+    <link rel="icon" type="image/png" href="/images/castmill_favicon.png"/>
 
     <meta name="description" content="{{ description }}"/>
     <link rel="canonical" href="{{ page.url }}"/>
@@ -15,8 +15,8 @@
     <script defer data-domain="castmill.com" src="https://plausible.io/js/plausible.js"></script>
 
     <!-- Begin Mailchimp Signup Form -->
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script>
       (function ($) {
         window.fnames = new Array();
         window.ftypes = new Array();
@@ -59,7 +59,7 @@
       <meta name="twitter:card" content="summary"/>
     {% endif %}
 
-    <script type="text/javascript">
+    <script>
       (function (w, d, v3) {
         w.chaportConfig = {
           appId: '5efdf2f11b4b08234a76f709',
@@ -94,18 +94,18 @@
           .parentNode
           .insertBefore(s, ss)
       })(window, document);
-    </script
+    </script>
   </head>
 
-    <body class="dark:bg-slate-900 bg-slate-50">
-      {% include '_header.njk' %}
+  <body class="dark:bg-slate-900 bg-slate-50">
+    {% include '_header.njk' %}
 
-      <main>
-        {{ content | safe }}
-      </main>
+    <main>
+      {{ content | safe }}
+    </main>
 
-      {% include '_cta.njk' %}
+    {% include '_cta.njk' %}
 
-      {% include '_footer.njk' %}
-    </body>
-  </html>
+    {% include '_footer.njk' %}
+  </body>
+</html>
