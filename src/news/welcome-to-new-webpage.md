@@ -1,7 +1,7 @@
 ---
 title: Welcome to our new webpage
 description: We are very proud to welcome you to our new webpage that we have designed from the group up to serve as knowledge portal with information and articles that you will find important for running your digital signage business.
-date: 2022-03-14
+date: 2022-04-12
 author: Manuel Astudillo
 twitter: manast
 cover: /blog/what-is-digital-signage/cover.jpg
