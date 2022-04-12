@@ -103,6 +103,7 @@ module.exports = function (eleventyConfig) {
 
   // Passthroughs
   eleventyConfig.addPassthroughCopy("src/css/global.css");
+  eleventyConfig.addPassthroughCopy("src/ahrefs_f802a3183786bc2a4a8adf9575d29047cadb641775fbb9337cf9c147188add9c");
   eleventyConfig.addPassthroughCopy("src/images");
   eleventyConfig.addPassthroughCopy("src/assets");
 
