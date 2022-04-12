@@ -1,4 +1,4 @@
-Sitemap: https://www.castmill.io/sitemap.xml
+Sitemap: https://castmill.com/sitemap.xml
 
 User-agent: * 
 Allow: /
