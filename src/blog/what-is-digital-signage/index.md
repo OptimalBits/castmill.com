@@ -8,6 +8,8 @@ date: 2022-03-14
 cover: /blog/what-is-digital-signage/cover.jpg
 avatar: https://avatars.githubusercontent.com/u/95200?v=4
 tags: post
+
+eleventyExcludeFromCollections: true
 ---
 
 If you are new to the concept of Digital signage you may wonder what it is all about.

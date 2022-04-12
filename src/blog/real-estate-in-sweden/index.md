@@ -4,7 +4,7 @@ type: Use Case
 description: How did we become the largest supplier of digital signage for the Real Estate market in Sweden?
 author: Manuel Astudillo
 twitter: manast
-date: 2022-03-10
+date: 2022-04-12
 cover: https://www.tyloprint.se/media/_content/inspiration/lff-halmstad/Banner1.webp
 avatar: https://avatars.githubusercontent.com/u/95200?v=4
 tags: post
