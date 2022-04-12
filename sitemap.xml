@@ -2,11 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
         <url>
-            <loc>https://castmill.com/news/welcome-to-new-webpage/</loc>
-            <lastmod>2022-03-14T00:00:00.000Z</lastmod>
-        </url>
-    
-        <url>
             <loc>https://castmill.com/features/easy-to-use/</loc>
             <lastmod>2022-03-15T00:00:00.000Z</lastmod>
         </url>
@@ -57,73 +52,78 @@
         </url>
     
         <url>
+            <loc>https://castmill.com/news/welcome-to-new-webpage/</loc>
+            <lastmod>2022-04-12T00:00:00.000Z</lastmod>
+        </url>
+    
+        <url>
             <loc>https://castmill.com/articles/sunt-aut-facere-repellat-provident-occaecati-excepturi-optio-reprehenderit/</loc>
-            <lastmod>2022-04-12T05:02:56.577Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.425Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/blog/</loc>
-            <lastmod>2022-04-12T05:02:56.581Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.425Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/conditions/</loc>
-            <lastmod>2022-04-12T05:02:56.585Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.433Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/contact/</loc>
-            <lastmod>2022-04-12T05:02:56.585Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.433Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/demos/</loc>
-            <lastmod>2022-04-12T05:02:56.585Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.433Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com.</loc>
-            <lastmod>2022-04-12T05:02:56.585Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.433Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/</loc>
-            <lastmod>2022-04-12T05:02:56.601Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.453Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/news/</loc>
-            <lastmod>2022-04-12T05:02:56.601Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.453Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/partners/</loc>
-            <lastmod>2022-04-12T05:02:56.601Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.453Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/partners/tylopring/tyloprint/</loc>
-            <lastmod>2022-04-12T05:02:56.601Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.453Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/players/</loc>
-            <lastmod>2022-04-12T05:02:56.601Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.453Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com.</loc>
-            <lastmod>2022-04-12T05:02:56.609Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.461Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/privacy/</loc>
-            <lastmod>2022-04-12T05:02:56.609Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.461Z</lastmod>
         </url>
     
         <url>
             <loc>https://castmill.com/solutions/</loc>
-            <lastmod>2022-04-12T05:02:56.609Z</lastmod>
+            <lastmod>2022-04-12T05:08:45.461Z</lastmod>
         </url>
     
 </urlset>
