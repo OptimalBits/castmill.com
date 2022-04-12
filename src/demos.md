@@ -1,5 +1,6 @@
 ---
 title: Demos
+description: This is our showroom with demos of some stuff you can easily do with Castmill.
 layout: "page.njk"
 
 cover: /images/demo.jpg
