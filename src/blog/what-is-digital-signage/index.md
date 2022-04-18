@@ -4,12 +4,10 @@ type: Article
 description: A brief introduction to Digital Signage and some of its benefits and challenges.
 author: Manuel Astudillo
 twitter: manast
-date: 2022-03-14
+date: 2022-04-18
 cover: /blog/what-is-digital-signage/cover.jpg
 avatar: https://avatars.githubusercontent.com/u/95200?v=4
 tags: post
-
-eleventyExcludeFromCollections: true
 ---
 
 If you are new to the concept of Digital signage you may wonder what it is all about.
