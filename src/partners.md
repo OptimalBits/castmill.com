@@ -1,5 +1,6 @@
 ---
 title: Partners
+description: Become a Castmill partner and deliver the best Digital Signage solution for your customers.
 layout: "page.njk"
 cover: "/partners/partnership.jpg"
 caption: "Work together with us to bring the best possible solution to your customers."
