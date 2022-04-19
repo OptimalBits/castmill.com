@@ -1,6 +1,7 @@
 ---
 title: "The friendliest support"
 description: "Tired of being ignored by your typical customer support? We understand that we are in this together, so when you need help, you get it fast and diligent."
+cta: Read about support
 icon: "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
 image: "/images/features/support.jpg"
 cover: "/images/features/support.jpg"

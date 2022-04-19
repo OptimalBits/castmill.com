@@ -1,6 +1,7 @@
 ---
 title: "Unlimited possibilities"
 description: "Castmill is an extensible platform allowing you to add custom widgets and new functionality that is required just for your project. If you can imagine it, we can add it to the platform."
+cta: Read about extensions
 icon: "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg"
 image: "/images/features/extensible.jpg"
 cover: "/images/features/extensible.jpg"

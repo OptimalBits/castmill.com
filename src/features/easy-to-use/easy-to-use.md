@@ -2,6 +2,7 @@
 title: "Easy to use redefined"
 description: "The compliment we most often receive is how easy to use our solution is. You are up an running in 3 simple steps: register your player, upload content and display it."
 icon: ""
+cta: Read about usability
 image: "/images/features/easy.jpg"
 cover: "/features/easy-to-use/the-portal.jpg"
 testimonial:
