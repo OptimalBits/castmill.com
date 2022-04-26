@@ -4,12 +4,10 @@ type: Article
 description: Customized templates helped in keeping information updated automatically during COVID-19.
 author: Manuel Astudillo
 twitter: manast
-date: 2022-03-16
+date: 2022-04-26
 cover: /blog/templates-covid-times/lf-front.jpg
 avatar: https://avatars.githubusercontent.com/u/95200?v=4
 tags: post
-
-eleventyExcludeFromCollections: true
 ---
 
 When the covid pandemic wreak havoc in the begining of 2020, many businesses had to make quick changes to adapt to the
