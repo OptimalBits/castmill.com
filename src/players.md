@@ -1,6 +1,6 @@
 ---
 title: Players
-description: Whare are Castmill Players
+description: Players are the most important component in your digital signage network. Castmill supports most hardware available in the market.
 layout: "page.njk"
 
 redirect_from:

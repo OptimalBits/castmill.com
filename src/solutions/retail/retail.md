@@ -1,6 +1,6 @@
 ---
 title: "Retail"
-description: "Retail"
+description: Castmill is a modern platform capable of serving all the digital signage needs of the retail industry.
 tags: "solutions"
 cover: "/solutions/retail/retail.jpg"
 date: 2022-03-19

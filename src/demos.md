@@ -1,6 +1,6 @@
 ---
 title: Demos
-description: This is our showroom with demos of some stuff you can easily do with Castmill.
+description: Get a glimpse of what Castmill can do for you in our showroom. Here you can find some typical digital signage use cases. 
 layout: "page.njk"
 
 cover: /images/demo.jpg

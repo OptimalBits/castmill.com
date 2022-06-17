@@ -1,6 +1,7 @@
 ---
 title: "Real Estate"
-description: "Castmill Solution for Real Estate"
+description: Castmill is the perfect partner for real estate agencies. We can integrate
+with existing systems and provide you a powerful digital signage solution.
 cover: /solutions/real-estate/real-estate-digital.jpg
 caption: "A digital solution blends seemless in any storefront."
 tags: "solutions"
@@ -31,4 +32,3 @@ in any country. When the integration is completed, the users can easily find the
 screens.
 
 You can read more about our showcase of [Real Estate in Sweden](/blog/real-estate-in-sweden) in partnership with [Tylöprint](https://tyloprint.se).
-
