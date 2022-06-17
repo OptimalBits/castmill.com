@@ -1,31 +1,80 @@
 {
   "matrix": {
-    "Features": ["Players", "Sharing", "Analytics"],
-    "Support": ["Email", "Phone", "Chat", "Ticket"]
+    "Features": [
+      "Players",
+      "Layouts",
+      "HD Video",
+      "Images",
+      "Widgets",
+      "Templates",
+      "Custom Layouts",
+      "Custom Widgets",
+      "4K Support",
+      "Sharing",
+      "Analytics"
+    ],
+    "Support": ["Email", "Chat", "Ticket", "Phone (Office hours GMT+1)"]
   },
   "packages": [
     {
       "name": "Starter",
       "price": "29",
       "description": "Start with a couple of players with most features available",
-      "features": {
-        "Players": "up to 4",
-        "Sharing": true
-      }
+      "Features": {
+        "Players": "up to 4 screens",
+        "Sharing": true,
+        "Layouts": true,
+        "HD Video": true,
+        "Images": true,
+        "Widgets": true
+      },
+      "Support": { "Email": true, "Chat": true },
+      "url": "https://app.castmill.com/?package=starter"
     },
     {
       "name": "Growth",
       "price": "49",
       "description": "For your growing network of players",
-      "features": { "Players": "up to 10", "Sharing": true },
-      "support": {}
+      "Features": {
+        "Players": "up to 10 screens",
+        "Layouts": true,
+        "Templates": true,
+        "HD Video": true,
+        "Images": true,
+        "Widgets": true,
+        "Sharing": true
+      },
+      "Support": {
+        "Email": true,
+        "Chat": true,
+        "Ticket": true
+      },
+      "url": "https://app.castmill.com/?package=growth"
     },
     {
       "name": "Enterprise",
       "price": "99",
       "description": "For your enterprise of players",
-      "features": {},
-      "support": {}
+      "Features": {
+        "Players": "up to 25 screens",
+        "Layouts": true,
+        "Templates": true,
+        "HD Video": true,
+        "Images": true,
+        "Widgets": true,
+        "Sharing": true,
+        "Analytics": true,
+        "Custom Layouts": true,
+        "Custom Widgets": true,
+        "4K Support": true
+      },
+      "Support": {
+        "Email": true,
+        "Chat": true,
+        "Ticket": true,
+        "Phone (Office hours GMT+1)": true
+      },
+      "url": "https://app.castmill.com/?package=enterprise"
     }
   ]
 }

@@ -2,9 +2,14 @@
 title: Castmill Pricing
 layout: "base.njk"
 description: Scalable pricing for your Digital Signage projects
-subheading: We offer a scalable and simple pricing model. Get your first player's subscription for free, with all the features enabled, and add more subscriptions as you need them.
+subheading: >
+  We offer a scalable and simple pricing model. 
+  Get your first player's subscription for free, with all the features enabled, 
+  and add more subscriptions as you need them.
 
-permalink: false
+eleventyNavigation:
+  key: Pricing
+  order: 2
 ---
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -18,6 +23,7 @@ permalink: false
           <h2 class="text-lg leading-6 font-semibold text-gray-300 uppercase tracking-wider">Pricing</h2>
           <p class="text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">The right price for you, whatever your needs</p>
           <p class="text-xl text-gray-300">{{ subheading }}</p>
+          <p class="text-xl text-gray-300">For larger instalations and more advanced requirements you may consider becoming a <a class="font-bold" href="/partners">partner</a>.</p>
         </div>
       </div>
     </div>
@@ -36,7 +42,7 @@ permalink: false
             <span class="text-base font-medium text-gray-500 dark:text-gray-300">/mo</span>
           </p>
           <p class="mt-4 text-sm text-gray-500">{{ package.description }}</p>
-          <a href="#" class="mt-6 block border border-gray-800 dark:border-gray-500 rounded-md bg-gray-800 w-full py-2 text-sm font-semibold text-white text-center hover:bg-gray-900 dark:hover:bg-gray-500">Buy {{ package.name }}</a>
+          <a href="{{ package.url }}" class="mt-6 block border border-gray-800 dark:border-gray-500 rounded-md bg-gray-800 w-full py-2 text-sm font-semibold text-white text-center hover:bg-gray-900 dark:hover:bg-gray-500">Buy {{ package.name }}</a>
         </div>
 
         {% for name, items in pricing.matrix %}
@@ -56,15 +62,15 @@ permalink: false
             <tr class="border-t border-gray-200">
               <th class="py-5 px-4 text-sm font-normal text-gray-500 dark:text-gray-400 text-left" scope="row">{{ feature }}</th>
               <td class="py-5 pr-4 text-right">
-              {% if package.features[feature] === true %}
+              {% if package[name][feature] === true %}
                 <!-- Heroicon name: solid/check -->
                 <svg class="ml-auto h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                 </svg>
                 <span class="sr-only">Yes</span>
-              {% elif package.features[feature] %}
-                <span class="ml-auto text-sm text-gray-700 dark:text-gray-100">{{ package.features[feature] }}</span>
-                <span class="sr-only">{{ package.features[feature] }}</span>
+              {% elif package[name][feature] %}
+                <span class="ml-auto text-sm text-gray-700 dark:text-gray-100">{{ package[name][feature] }}</span>
+                <span class="sr-only">{{ package[name][feature] }}</span>
               {% else %}
                 <!-- Heroicon name: solid/minus -->
                 <svg class="ml-auto h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -81,7 +87,7 @@ permalink: false
         {% endfor %}
 
         <div class="border-t border-gray-200 px-4 pt-5">
-          <a href="#" class="block w-full bg-gray-800 border border-gray-800 dark:border-gray-500 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900 dark:hover:bg-gray-500">Buy {{ package.name }}</a>
+          <a href="{{ package.url }}" class="block w-full bg-gray-800 border border-gray-800 dark:border-gray-500 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900 dark:hover:bg-gray-500">Buy {{ package.name }}</a>
         </div>
       </section>
       {% endfor %}
@@ -118,7 +124,7 @@ permalink: false
                   <span class="text-base font-medium text-gray-500 dark:text-gray-400">/mo</span>
                 </p>
                 <p class="mt-4 mb-16 text-sm text-gray-500 dark:text-gray-400">{{ package.description }}.</p>
-                <a href="#" class="absolute bottom-0 flex-grow block w-full bg-gray-800 border border-gray-800 dark:border-gray-500 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-900 dark:hover:bg-gray-500">Buy {{ package.name }}</a>
+                <a href="{{ package.url }}" class="absolute bottom-0 flex-grow block w-full bg-gray-800 border border-gray-800 dark:border-gray-500 rounded-md 5 py-2 text-sm font-semibold text-white text-center hover:bg-gray-900 dark:hover:bg-gray-500">Buy {{ package.name }}</a>
               </div>
             </td>
             {% endfor %}
@@ -133,13 +139,13 @@ permalink: false
             <th class="py-5 px-6 text-sm font-normal text-gray-500 dark:text-gray-400 text-left" scope="row">{{ feature }}</th>
             {% for package in pricing.packages %}
               <td class="py-5 px-6">
-                {% if package.features[feature] === true %}
+                {% if package[name][feature] === true %}
                 <svg class="h-5 w-5 text-green-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
                 </svg>
                 <span class="sr-only">Included in {{ package.name }}</span>
-                {% elif package.features[feature] %}
-                  <span class="block text-sm text-gray-700 dark:text-gray-100">{{ package.features[feature] }}</span>
+                {% elif package[name][feature] %}
+                  <span class="block text-sm text-gray-700 dark:text-gray-100">{{ package[name][feature] }}</span>
                 {% else %}
                 <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                   <path fill-rule="evenodd" d="M3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
@@ -158,7 +164,7 @@ permalink: false
 
             {% for package in pricing.packages %}            
             <td class="pt-5 px-6">
-              <a href="#" class="block w-full bg-gray-800 border border-gray-800 dark:border-gray-500 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900 dark:hover:bg-gray-500">Buy {{ package.name }}</a>
+              <a href="{{ package.url }}" class="block w-full bg-gray-800 border border-gray-800 dark:border-gray-500 rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-gray-900 dark:hover:bg-gray-500">Buy {{ package.name }}</a>
             </td>
             {% endfor %}
           </tr>
