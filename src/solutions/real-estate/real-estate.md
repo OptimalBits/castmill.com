@@ -1,7 +1,7 @@
 ---
 title: "Real Estate"
-description: Castmill is the perfect partner for real estate agencies. We can integrate
-with existing systems and provide you a powerful digital signage solution.
+description: "Castmill is the perfect partner for real estate agencies. We can integrate
+with existing systems and provide you a powerful digital signage solution."
 cover: /solutions/real-estate/real-estate-digital.jpg
 caption: "A digital solution blends seemless in any storefront."
 tags: "solutions"
