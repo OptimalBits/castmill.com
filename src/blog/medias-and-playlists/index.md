@@ -10,11 +10,11 @@ avatar: https://pbs.twimg.com/profile_images/1387865689873059842/tAs5CDQ0_400x40
 tags: post
 ---
 
-Whether you just have a single digital signage screen or run a global network of screens you will definitely want to control what content they should show. In this article we will introduce the concept of playlists and how to work with them. A playlist contains all the images and videos that you want to display on a screen at a given point in time. You can also schedule different playlists to play at different times during the day. Keeping your content relevant to your target audience at all times is the key here and playlists help you do that.
+Whether you have a single digital signage screen or run a global network of screens, you will definitely want to control what content they should show. In this blog post, we will introduce the concept of playlists and how to work with them. A playlist contains all the images and videos that you want to display on a screen. The playlist content loops as long as the playlist is running, but you can have multiple playlists scheduled to play at different times during the day. Keeping your content relevant to your target audience is the key here, and playlists help you do that.
 
-If your screens are in a restaurant for example, you will probably have one playlist running in the morning with the breakfast menu, another playlist will run around lunchtime and additional playlists in the evening and night time.
+If, for example, your screens are in a restaurant, you will probably have one playlist running in the morning with the breakfast menu, another playlist will run around lunchtime, and additional playlists in the evening and nighttime.
 
-If you run a network of screens across multiple sites you can use shared playlists to show the same content on all screens even though they belong to different users. Shared playlists can also be used as a collaboration tool allowing multiple users to work together on a single playlist. In a typical multi site installation there may be one centrally managed playlist and additional playlists for each site.  Similarly, in the cast of a franchise, a franchisor may use a shared playlist to push out content to all franchisees.
+If you run a network of screens across multiple sites, you can use shared playlists to show the same content on all screens, even though they belong to different users. Shared playlists can also be used as a collaboration tool allowing multiple users to work together on a single playlist. In a typical multi-site installation, one centrally managed playlist is used in combination with  additional playlists for each site. Similarly, in the cast of a franchise, a franchisor may use a shared playlist to push out content to all franchisees.
 
 ### Prerequisites
 
