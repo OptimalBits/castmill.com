@@ -14,7 +14,7 @@ Whether you have a single digital signage screen or run a global network of scre
 
 If, for example, your screens are in a restaurant, you will probably have one playlist running in the morning with the breakfast menu, another playlist will run around lunchtime, and additional playlists in the evening and nighttime.
 
-If you run a network of screens across multiple sites, you can use shared playlists to show the same content on all screens, even though they belong to different users. Shared playlists can also be used as a collaboration tool allowing multiple users to work together on a single playlist. In a typical multi-site installation, one centrally managed playlist is used in combination with  additional playlists for each site. Similarly, in the cast of a franchise, a franchisor may use a shared playlist to push out content to all franchisees.
+If you run a network of screens across multiple sites, you can use shared playlists to show the same content on all screens, even though they belong to different users. Shared playlists can also be used as a collaboration tool allowing multiple users to work together on a single playlist. In a typical multi-site installation, one centrally managed playlist is used in combination with  additional playlists for each site. Similarly, in the case of a franchise, a franchisor may use a shared playlist to push out content to all franchisees.
 
 ### Prerequisites
 
@@ -72,7 +72,7 @@ content to the *Organize Playlist* section.
 
 {% image "/blog/medias-and-playlists/img14.png", "", 900 %}
 
-We've now created our first playlist. In subsequent posts we'll walk you through how to use calendars to schedule which playlist is played when. We'll also dig deeper into the playlist concept and show the different playlist layouts, transitions and the concept of widgets.
+We've now created our first playlist. In subsequent posts we'll walk you through how to use calendars to schedule which playlist is played and when. We'll also dig deeper into the playlist concept and show the different playlist layouts, transitions and the concept of widgets.
 
 Stay tuned for more...
 
