@@ -7,6 +7,7 @@ date: 2022-04-04
 
 <script type="module">
     import {startDemo, getSimpleDemo} from "/assets/castmill-demos.es.js"
+
     const demo = await getSimpleDemo();
     const app = document.getElementById("demo")
     startDemo(app, demo)
