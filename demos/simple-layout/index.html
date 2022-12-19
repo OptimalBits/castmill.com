@@ -231,12 +231,13 @@
         <div class="container mx-auto prose prose-slate dark:prose-dark dark:prose-invert">
             <script type="module">
     import {startDemo, getSimpleDemo} from "/assets/castmill-demos.es.js"
+
     const demo = await getSimpleDemo();
     const app = document.getElementById("demo")
     startDemo(app, demo)
 </script>
 <p>This demo demonstrates a simple sequence of images and videos without any fancy effects or widgets.</p>
-<div id="demo" class="mt-12" style="line-height: 1.5em;"></div>
+<div id="demo" class="mt-12 mb-10" style="line-height: 1.5em;"></div>
 <div class="flex">
   <div class="flex-none">
   <span>
