@@ -1,7 +1,7 @@
 ---
 title: Castmill Open Source
 description: We are releasing Castmill as Open Source.
-date: 2023-07-26
+date: 2023-07-28
 author: Manuel Astudillo
 twitter: manast
 cover: /news/castmill-open-source/open-source.jpg
