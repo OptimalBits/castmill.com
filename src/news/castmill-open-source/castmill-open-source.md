@@ -32,7 +32,7 @@ We have defined several principles to guide us in the development and help us st
 Security has always been a very important aspect in any software solution, and specially in digital signage, where it is of vital importance to guarantee that every piece of content is displayed on its proper screen, shielded from any undesirable intrusions.
 
 Keeping a computer system secure att all times is really challenging, and lately it has become even harder as
-hackers have more sofisticated tools and resources than ever.
+hackers have more sophisticated tools and resources than ever.
 
 For Castmill we are adopting a "security first" approach with a "zero trust" policy. This implies that each component within the platform operates on the principle of not giving any other component access without a proper authentication and permissions set. The intent is to limit the damage, or 'blast radius', should any part of the system fall under an attacker's control.
 
@@ -61,7 +61,7 @@ Single sign on, and integration with other data sources and systems within your 
 
 ## Extensible and inter-operable
 
-Behind these fancy terms, we are talking about the possibilities of easily extending the platform as well as to interface with other systems. With an "API first" strategy underpinning our core services, it is possible to connect and integrate Castmill with any other services out there, so you can use Castmill for displaying business information in your office space as well as for example displaying airplane arrivals and departures airplane arrivals and departures at your preferred airport.
+Behind these fancy terms, we are talking about the possibilities of easily extending the platform as well as to interface with other systems. With an "API first" strategy underpinning our core services, it is possible to connect and integrate Castmill with any other services out there, so you can use Castmill for displaying business information in your office space as well as for example displaying airplane arrivals and departures at your preferred airport.
 
 Additionally, we provide tools that simplify the creation of new widgets. These custom widgets can be used to display any variety of information linked to any data source, be it within your intranet or across the internet.
 

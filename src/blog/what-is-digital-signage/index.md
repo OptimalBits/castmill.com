@@ -47,7 +47,7 @@ actually plays the desired content on the screen. Some displays include the play
 the player is a separate device.
 
 Finally a software to run the player as well as a content management system (CMS) is needed. This two pieces of
-software make possible to display any content on the screen. A sofisticated CMS will allow you to create
+software make possible to display any content on the screen. A sophisticated CMS will allow you to create
 complex playlists with many different layouts and animations. It should also allow you to schedule the content so
 it is played at the right time.
 
